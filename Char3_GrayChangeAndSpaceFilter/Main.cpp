@@ -1,6 +1,7 @@
 #include"iostream"
 #include<opencv2\opencv.hpp>
 #include"GrayChange.h"
+#include"HistogramProcess.h"
 #include"MyNSp.h"
 
 using namespace std;
@@ -9,21 +10,12 @@ using namespace MyNSP;
 
 int main()
 {
-	Mat OriImage;
-	OriImage = imread("people.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
-	Mat RevImage = GrayLineage(OriImage, Reverse);
-	Mat LogImage = GrayChange(OriImage, LOG);
-	Mat PowImage = GrayChange(OriImage, POW);
-	Mat ExpImage = GrayLineage(OriImage, Expend);
+	Mat image = imread("test.jpg");
 
-	imshow("OriImage", OriImage);
-	imshow("RevImage", RevImage);
-	imshow("LogImage", LogImage);
-	imshow("PowImage", PowImage);
-	imshow("ExpImage", ExpImage);
+	Mat his = CreateHisto(image);
 
-	imwrite("ExpImage.jpg", ExpImage);
+	imshow("Histogram", his);
 
 	waitKey();
 

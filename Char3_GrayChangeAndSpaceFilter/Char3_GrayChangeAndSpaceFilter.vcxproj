@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GrayChange.cpp" />
+    <ClCompile Include="HistogramProcess.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GrayChange.h" />
+    <ClInclude Include="HistogramProcess.h" />
     <ClInclude Include="MyNSp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

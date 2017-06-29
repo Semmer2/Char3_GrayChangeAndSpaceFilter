@@ -21,12 +21,18 @@
     <ClCompile Include="GrayChange.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HistogramProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GrayChange.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyNSp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HistogramProcess.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -36,19 +36,19 @@ Mat GrayLineage(Mat image, int OpCode)
 			MatIterator_<uchar> itout = Result.begin<uchar>();
 			for (; it != end; it++, itout++)
 			{
-				uchar val = (int)(*it);
+				uchar val = (*it);
 				if (val > 100 && val < 155)
 				{
 					(*itout) = (int)(((*it)-81)*2.8);
 				}
 				else if(val<=100)
 				{
-					(*itout) = (int)0.5* (*it);
+					(*itout) = (int)(0.5* (*it));
 					//cout << "<100 ";
 				}
-				else if(val>=150)
+				else if(val>=155)
 				{
-					(*itout) = (int)0.5* (*it)+128;
+					(*itout) = (int)(0.5* (*it)+128);
 				}
 			}
 			cout << "MinGray: "<<(int)MinGray(Result) << endl;
@@ -56,8 +56,6 @@ Mat GrayLineage(Mat image, int OpCode)
 			break;
 		}
 	}
-
-
 
 	return Result;
 }
