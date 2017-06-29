@@ -6,3 +6,5 @@ using namespace std;
 using namespace cv;
 
 Mat GrayLineage(Mat image,int OpCode);
+
+Mat GrayChange(Mat image, int OpCode);//±‰∞µ/¡¡
