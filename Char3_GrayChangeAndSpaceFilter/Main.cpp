@@ -11,13 +11,13 @@ using namespace MyNSP;
 int main()
 {
 
-	Mat image = imread("test.jpg",CV_LOAD_IMAGE_COLOR);
+	Mat image = imread("test.jpg",CV_LOAD_IMAGE_GRAYSCALE);
 	Mat his;
 	if (image.data)
 	{
 		imshow("test image", image);
-		his = CreateHisto(image,RGBImage);
-		//imshow("Histogram", his);
+		his = CreateHisto(image,GrayImage);
+		imshow("Histogram", his);
 	}
 	waitKey();
 
