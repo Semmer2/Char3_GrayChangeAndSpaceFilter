@@ -5,4 +5,4 @@
 using namespace std;
 using namespace cv;
 
-Mat CreateHisto(Mat image);
+Mat CreateHisto(Mat image,int Code);
