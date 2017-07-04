@@ -8,6 +8,12 @@ namespace MyNSP
 	const int LOG = 2;
 	const int POW = 3;
 
+	const int WHITE = 50;
+	const int RED = 51;
+	const int GREEN = 52;
+	const int BLUE = 53;
+	const int GRAY = 54;
+
 	const int GrayImage = 100;
 	const int RGBImage = 101;
 }

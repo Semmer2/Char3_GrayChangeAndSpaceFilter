@@ -5,4 +5,6 @@
 using namespace std;
 using namespace cv;
 
-Mat CreateHisto(Mat image,int Code);
+vector<Mat> CreateHisto(Mat image,int Code);
+
+void showHisto(Mat image, int Code);
