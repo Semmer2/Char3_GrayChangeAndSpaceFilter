@@ -2,25 +2,25 @@
 #include<opencv2\opencv.hpp>
 #include"GrayChange.h"
 #include"HistogramProcess.h"
+#include"BlurAndFilter.h"
 #include"MyNSp.h"
 
 using namespace std;
 using namespace cv;
 using namespace MyNSP;
 
+Mat Unsharp(Mat image)
+{
+	return image;
+}
+
 int main()
 {
 
-	Mat image = imread("test.jpg",CV_LOAD_IMAGE_GRAYSCALE);
-	showHisto(image, GrayImage);
+	Mat image = imread("Blur.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 	
+	//ImageBlurTest(image);
+	UnsharpMasking(image);
 
-	Mat OutImage(image.rows, image.cols, CV_8U);
-
-	equalizeHist(image, OutImage);
-	waitKey();
-	showHisto(OutImage, GrayImage);
-
-	waitKey();
 	return 0;
 }

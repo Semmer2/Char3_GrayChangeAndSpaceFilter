@@ -24,6 +24,9 @@
     <ClCompile Include="HistogramProcess.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BlurAndFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GrayChange.h">
@@ -33,6 +36,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HistogramProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurAndFilter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

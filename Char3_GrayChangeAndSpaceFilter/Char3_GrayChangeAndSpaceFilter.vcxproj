@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlurAndFilter.cpp" />
     <ClCompile Include="GrayChange.cpp" />
     <ClCompile Include="HistogramProcess.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlurAndFilter.h" />
     <ClInclude Include="GrayChange.h" />
     <ClInclude Include="HistogramProcess.h" />
     <ClInclude Include="MyNSp.h" />
